@@ -46,8 +46,7 @@
             this.contextMenuStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
-            this.MouseMove += Form1_MouseMove;
-            this.MouseClick += Form1_MouseClick;
+            this.MouseMove += Form1_MouseMove;           
             this.MouseDown += Form1_MouseDown;
             // 
             // label1
