@@ -28,150 +28,158 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
-            label1 = new Label();
-            label2 = new Label();
-            label3 = new Label();
-            PointX = new Label();
-            PointY = new Label();
-            contextMenuStrip1 = new ContextMenuStrip(components);
-            menuStrip1 = new MenuStrip();
-            test1ToolStripMenuItem = new ToolStripMenuItem();
-            test11ToolStripMenuItem = new ToolStripMenuItem();
-            test110ToolStripMenuItem = new ToolStripMenuItem();
-            menu1ToolStripMenuItem = new ToolStripMenuItem();
-            menu11ToolStripMenuItem = new ToolStripMenuItem();
-            menu110ToolStripMenuItem = new ToolStripMenuItem();
-            menu2ToolStripMenuItem = new ToolStripMenuItem();
-            contextMenuStrip1.SuspendLayout();
-            menuStrip1.SuspendLayout();
-            SuspendLayout();
+            this.components = new System.ComponentModel.Container();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.PointX = new System.Windows.Forms.Label();
+            this.PointY = new System.Windows.Forms.Label();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.test1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.test11ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.test110ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.menu1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menu11ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menu110ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menu2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.contextMenuStrip1.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
+            this.SuspendLayout();
+            this.MouseMove += Form1_MouseMove;
+            this.MouseClick += Form1_MouseClick;
+            this.MouseDown += Form1_MouseDown;
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(36, 19);
-            label1.Name = "label1";
-            label1.Size = new Size(43, 15);
-            label1.TabIndex = 0;
-            label1.Text = "Mouse";
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(36, 19);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(43, 15);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Mouse";
             // 
             // label2
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(127, 84);
-            label2.Name = "label2";
-            label2.Size = new Size(17, 15);
-            label2.TabIndex = 1;
-            label2.Text = "X:";
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(127, 84);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(17, 15);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "X:";
             // 
             // label3
             // 
-            label3.AutoSize = true;
-            label3.Location = new Point(126, 116);
-            label3.Name = "label3";
-            label3.Size = new Size(17, 15);
-            label3.TabIndex = 2;
-            label3.Text = "Y:";
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(126, 116);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(17, 15);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Y:";
             // 
             // PointX
             // 
-            PointX.AutoSize = true;
-            PointX.Location = new Point(170, 86);
-            PointX.Name = "PointX";
-            PointX.Size = new Size(0, 15);
-            PointX.TabIndex = 3;
+            this.PointX.AutoSize = true;
+            this.PointX.Location = new System.Drawing.Point(170, 86);
+            this.PointX.Name = "PointX";
+            this.PointX.Size = new System.Drawing.Size(0, 15);
+            this.PointX.TabIndex = 3;
             // 
             // PointY
             // 
-            PointY.AutoSize = true;
-            PointY.Location = new Point(163, 115);
-            PointY.Name = "PointY";
-            PointY.Size = new Size(0, 15);
-            PointY.TabIndex = 4;
+            this.PointY.AutoSize = true;
+            this.PointY.Location = new System.Drawing.Point(163, 115);
+            this.PointY.Name = "PointY";
+            this.PointY.Size = new System.Drawing.Size(0, 15);
+            this.PointY.TabIndex = 4;
             // 
             // contextMenuStrip1
             // 
-            contextMenuStrip1.Items.AddRange(new ToolStripItem[] { test1ToolStripMenuItem, test11ToolStripMenuItem });
-            contextMenuStrip1.Name = "contextMenuStrip1";
-            contextMenuStrip1.Size = new Size(113, 48);
-            // 
-            // menuStrip1
-            // 
-            menuStrip1.Items.AddRange(new ToolStripItem[] { menu1ToolStripMenuItem, menu2ToolStripMenuItem });
-            menuStrip1.Location = new Point(0, 0);
-            menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(800, 24);
-            menuStrip1.TabIndex = 6;
-            menuStrip1.Text = "menuStrip1";
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.test1ToolStripMenuItem,
+            this.test11ToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(113, 48);
             // 
             // test1ToolStripMenuItem
             // 
-            test1ToolStripMenuItem.Name = "test1ToolStripMenuItem";
-            test1ToolStripMenuItem.Size = new Size(112, 22);
-            test1ToolStripMenuItem.Text = "Test 1";
+            this.test1ToolStripMenuItem.Name = "test1ToolStripMenuItem";
+            this.test1ToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
+            this.test1ToolStripMenuItem.Text = "Test 1";
             // 
             // test11ToolStripMenuItem
             // 
-            test11ToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { test110ToolStripMenuItem });
-            test11ToolStripMenuItem.Name = "test11ToolStripMenuItem";
-            test11ToolStripMenuItem.Size = new Size(112, 22);
-            test11ToolStripMenuItem.Text = "Test 1.1";
+            this.test11ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.test110ToolStripMenuItem});
+            this.test11ToolStripMenuItem.Name = "test11ToolStripMenuItem";
+            this.test11ToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
+            this.test11ToolStripMenuItem.Text = "Test 1.1";
             // 
             // test110ToolStripMenuItem
             // 
-            test110ToolStripMenuItem.Name = "test110ToolStripMenuItem";
-            test110ToolStripMenuItem.Size = new Size(180, 22);
-            test110ToolStripMenuItem.Text = "Test 1.1.0";
+            this.test110ToolStripMenuItem.Name = "test110ToolStripMenuItem";
+            this.test110ToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
+            this.test110ToolStripMenuItem.Text = "Test 1.1.0";
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menu1ToolStripMenuItem,
+            this.menu2ToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
+            this.menuStrip1.TabIndex = 6;
+            this.menuStrip1.Text = "menuStrip1";
             // 
             // menu1ToolStripMenuItem
             // 
-            menu1ToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { menu11ToolStripMenuItem });
-            menu1ToolStripMenuItem.Name = "menu1ToolStripMenuItem";
-            menu1ToolStripMenuItem.Size = new Size(59, 20);
-            menu1ToolStripMenuItem.Text = "Menu 1";
+            this.menu1ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menu11ToolStripMenuItem});
+            this.menu1ToolStripMenuItem.Name = "menu1ToolStripMenuItem";
+            this.menu1ToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
+            this.menu1ToolStripMenuItem.Text = "Menu 1";
             // 
             // menu11ToolStripMenuItem
             // 
-            menu11ToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { menu110ToolStripMenuItem });
-            menu11ToolStripMenuItem.Name = "menu11ToolStripMenuItem";
-            menu11ToolStripMenuItem.Size = new Size(180, 22);
-            menu11ToolStripMenuItem.Text = "Menu 1.1";
+            this.menu11ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menu110ToolStripMenuItem});
+            this.menu11ToolStripMenuItem.Name = "menu11ToolStripMenuItem";
+            this.menu11ToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
+            this.menu11ToolStripMenuItem.Text = "Menu 1.1";
             // 
             // menu110ToolStripMenuItem
             // 
-            menu110ToolStripMenuItem.Name = "menu110ToolStripMenuItem";
-            menu110ToolStripMenuItem.Size = new Size(180, 22);
-            menu110ToolStripMenuItem.Text = "Menu 1.1.0";
+            this.menu110ToolStripMenuItem.Name = "menu110ToolStripMenuItem";
+            this.menu110ToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
+            this.menu110ToolStripMenuItem.Text = "Menu 1.1.0";
             // 
             // menu2ToolStripMenuItem
             // 
-            menu2ToolStripMenuItem.Name = "menu2ToolStripMenuItem";
-            menu2ToolStripMenuItem.Size = new Size(59, 20);
-            menu2ToolStripMenuItem.Text = "Menu 2";
+            this.menu2ToolStripMenuItem.Name = "menu2ToolStripMenuItem";
+            this.menu2ToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
+            this.menu2ToolStripMenuItem.Text = "Menu 2";
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(menuStrip1);
-            Controls.Add(PointY);
-            Controls.Add(PointX);
-            Controls.Add(label3);
-            Controls.Add(label2);
-            Controls.Add(label1);
-            MainMenuStrip = menuStrip1;
-            Name = "Form1";
-            Text = "Form1";
-            MouseClick += Form1_MouseClick;
-            MouseMove += Form1_MouseMove;
-            MouseDown += Form1_MouseDown;
-            contextMenuStrip1.ResumeLayout(false);
-            menuStrip1.ResumeLayout(false);
-            menuStrip1.PerformLayout();
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.menuStrip1);
+            this.Controls.Add(this.PointY);
+            this.Controls.Add(this.PointX);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.MainMenuStrip = this.menuStrip1;
+            this.Name = "Form1";
+            this.Text = "Form1";
+            this.contextMenuStrip1.ResumeLayout(false);
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
